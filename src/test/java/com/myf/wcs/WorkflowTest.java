@@ -30,7 +30,7 @@ public class WorkflowTest extends AbstractProcessEngineRuleTest {
     assertThat(processInstance).isStarted()
         .task()
         .hasDefinitionKey("say-hello")
-        .hasCandidateUser("demo")
+        .hasCandidateUser("admin")
         .isNotAssigned();
   }
 

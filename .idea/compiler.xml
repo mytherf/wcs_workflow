@@ -9,5 +9,21 @@
         <module name="wcs-workflow" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="1.8" />
+      <module name="common-encrypt" target="1.8" />
+      <module name="common-mybatis" target="1.8" />
+      <module name="core" target="1.8" />
+      <module name="database" target="1.8" />
+      <module name="wcs-database-migration" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common-encrypt" options="-parameters" />
+      <module name="common-mybatis" options="-parameters" />
+      <module name="core" options="-parameters" />
+      <module name="wcs-database-migration" options="-parameters" />
+    </option>
   </component>
 </project>
